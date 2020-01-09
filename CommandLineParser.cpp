@@ -51,6 +51,8 @@ vector<wstring> CmdLineParser(wstring wsCmdLine)
         }
         ++i;
     }
+    LocalFree(argv);
+
     puts("---Result:");
     for (size_t j = 0; j < v.size(); ++j)
     {
